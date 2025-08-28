@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work page</title>
+    <!-- Thư viện Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Phông chữ Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Nền màu xám nhạt */
+        }
+        .category-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* Bo tròn góc */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        .link-button {
+            display: block;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: #e0f2fe; /* Nền màu xanh nhạt */
+            color: #0369a1; /* Chữ màu xanh đậm hơn */
+            font-weight: 600;
+            border-radius: 0.5rem; /* Bo tròn góc nhỏ hơn cho nút */
+            text-align: center;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-button:hover {
+            background-color: #bfdbfe; /* Xanh nhạt hơn khi di chuột */
+            color: #075985;
+            transform: translateX(5px); /* Hiệu ứng di chuyển nhỏ */
+        }
+        .svg {
+            margin-right: 0.75rem;
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-lg p-6 sm:p-10">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+                Work page
+            </h1>
+            <p class="text-lg text-gray-600">
+                Truy cập nhanh các trang web yêu thích của bạn theo chuyên mục.
+            </p>
+        </header>
+
+        <!-- Thay đổi bố cục số cột lưới trên màn hình tại lg:grid-cols- -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <section class="category-card p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                    Danh sách
+                </h2>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/10u9ls5nuI9yzt9mX-Sa4_F9yieLyNApQZPFFU6WbecQ/edit?resourcekey=&gid=52335715#gid=52335715&fvid=1839048403" target="_blank" class="link-button">
+                            Thư viện văn bản
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1Qizp0TSFJcV_VWoSWYqxhd8RUSc023Ir1AO6Yy8IBZ4/edit?resourcekey=&gid=1154955457#gid=1154955457" target="_blank" class="link-button">
+                            Tổng hợp kiểm tra
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1_Bufj6q4R-CETfMMIE4mEbxP8qw43yb2dbetYGRS1Ds/edit?gid=68960265#gid=68960265" target="_blank" class="link-button">
+                            Hội nghị
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1uaeN_PnjRWi7rFhz5Kzs5Sfx34KPMqULGLHES8vlF0s/edit?gid=384184678#gid=384184678" target="_blank" class="link-button">
+                            Chuyển địa bàn
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+ <section class="category-card p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                    Báo cáo
+                </h2>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1S8oOpAsNzShOqI4ZGn7LPdH8pgCjd3K1YM-w253Ym1k/edit?gid=1995718416#gid=1995718416" target="_blank" class="link-button">
+                            Báo cáo B06-TS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1D7hP5GO_QZ_2mGpftV1bGXT59Z5sAYFojcr7zkhEtrU/edit?gid=666860152#gid=666860152" target="_blank" class="link-button">
+                            Báo cáo thuế - Quận
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1YQJZx5SlR5-MJmEunBcv3XUEfLRpsa4n5dpB58mATPc/edit?gid=138027231#gid=138027231" target="_blank" class="link-button">
+                            Báo cáo thuế - TP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/14FhDZKxceZJiRPBRMZj_1_w0gVmit9p9/edit?gid=2141475694#gid=2141475694" target="_blank" class="link-button">
+                            Báo cáo công tác
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="category-card p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                    Tra cứu
+                </h2>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="http://10.79.245.245/thuhoixacso/" target="_blank" class="link-button">
+                            Thu hồi sổ BHXH
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://doanhnghiep.hochiminhcity.gov.vn/Home/Index" target="_blank" class="link-button">
+                            Thông tin doanh nghiệp
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="Tra_cuu_Co_so.html" target="_blank" class="link-button">
+                            DS BHXH cơ sở
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="Tuoi_huu.html" target="_blank" class="link-button">
+                            Tuổi nghỉ hưu
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="category-card p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                    Nhập liệu
+                </h2>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1JFEYWL7v_3-k_Yi1c0UV2mYAr0CNtZERNnbN82L9QXo/edit?gid=0#gid=0" target="_blank" class="link-button">
+                            Cấp mã Q6
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdC5_-plRiH61xeT91xFuwF9wtxUqWHiNX93S-4RgVVaiuwUw/viewform" target="_blank" class="link-button">
+                            Thư viện văn bản
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWqcEFErPUBEum0ENOi6KF91uvn8dnbJlfu772rMpIQdv00g/viewform" target="_blank" class="link-button">
+                            Tổng hợp kiểm tra
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section class="category-card p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                    Lưu trữ
+                </h2>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYSnc8BnYhBqvdC8VU7rKQe2QhxB8o033HyeO7UPkml7k4Q/viewform" target="_blank" class="link-button">
+                            Xác nhận công nợ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScuxED8fbEPBzvWrDKjR6sxyjjQDkVwYb1u4w7SAL3_cpJ0QA/viewform" target="_blank" class="link-button">
+                            Sổ BHXH scan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDztlDPKdBOm36osO6TdQN2eF97PZNeazbcQKvMpvNL2VUyg/viewform" target="_blank" class="link-button">
+                            Đơn vị giải trình
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1gvjP5GikpqHuAimM6CvtoeasGuV4JaHObcTNVQyh9ow/edit?gid=0#gid=0" target="_blank" class="link-button">
+                            Chuyển quận (cũ)
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="category-card p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                    Lưu trữ
+                </h2>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="https://forms.gle/wKtrnjNbAacoq1CLA" target="_blank" class="link-button">
+                            HĐ TC Dịch vụ Thu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/15hkPfPd69Vh3TZqjgfSmCOSrhi9pO8vSIqKAJ9huT10/edit?gid=0#gid=0" target="_blank" class="link-button">
+                            Kho tờ Tuyên truyền
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://mail.vss.gov.vn/cloud/s/eTLGTozGjIC3LJb" target="_blank" class="link-button">
+                            Dữ liệu TP gửi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1T3koFdAYjVQnO3E48D-Tw1IczA_RRJArPSU88nB1Czg/edit?gid=326808669#gid=326808669" target="_blank" class="link-button">
+                            Lập báo cáo
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>&copy; 2024 Trang Chủ Cá Nhân. Thiết kế bởi Gemini.</p>
+        </footer>
+    </div>
+</body>
+</html>
